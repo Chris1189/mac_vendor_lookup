@@ -24,7 +24,7 @@ class VendorNotFoundError(KeyError):
 
 
 class BaseMacLookup(object):
-    cache_path = os.path.expanduser('~/.cache/mac-vendors.txt')
+    cache_path = os.path.expanduser('/usr/share/mac_vendor_lookup/mac-vendors.txt')
 
     @staticmethod
     def sanitise(_mac):
